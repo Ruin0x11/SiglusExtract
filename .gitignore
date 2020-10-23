@@ -25,3 +25,10 @@
 # Executables
 *.out
 *.app
+
+.vs/
+bin/
+obj/
+Win32/
+Release/
+Debug/

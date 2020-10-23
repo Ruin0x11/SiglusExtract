@@ -18,8 +18,8 @@
 #include <vector>
 #include <Vfw.h>
 
-#pragma comment(lib, "libogg_static.lib")
-#pragma comment(lib, "libtheora_static.lib")
+#pragma comment(lib, "..\\Release\\libogg_static.lib")
+#pragma comment(lib, "..\\Release\\libtheora_static.lib")
 #pragma comment(lib, "Vfw32.lib")
 
 typedef struct OMVHeader
