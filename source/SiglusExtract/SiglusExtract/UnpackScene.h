@@ -270,6 +270,12 @@ private:
 			else
 				RtlCopyMemory(new_str, info_str, info->length * 2);
 
+            Writer.Write(L"; ", 2);
+            for (DWORD i = 0; i < info->length; i++)
+            {
+                Writer.Write(&new_str[i], 2);
+            }
+            Writer.Write(L"\r\n", 4);
 			for (DWORD i = 0; i<info->length; i++)
 			{
 				Writer.Write(&new_str[i], 2);

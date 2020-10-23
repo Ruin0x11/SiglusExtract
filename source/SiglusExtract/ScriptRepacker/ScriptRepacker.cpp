@@ -182,6 +182,9 @@ int wmain(int argc, wchar_t* argv[])
 
 	for (auto& Line : Lines)
 	{
+        if (Line[0] == L';') {
+            continue;
+        }
 		if (index < string_table.size())
 		{
 			string_table[index]->new_string = new wchar_t[Line.length() + 1];
